@@ -82,8 +82,8 @@ pub fn Field(comptime T: type) type {
             const stdout_file = std.io.getStdOut().writer();
 
             for (self.data.items) |row| {
-                for (row.items) |char| {
-                    try stdout_file.print("{c}", .{char});
+                for (row.items) |item| {
+                    try stdout_file.print("{any}", .{item});
                 }
 
                 try stdout_file.print("\n", .{});

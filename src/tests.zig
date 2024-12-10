@@ -19,6 +19,8 @@ test "Char field test" {
     try testing.expect(field.get(0, 0).? == '1');
     try testing.expect(field.get(1, 1).? == '5');
     try testing.expect(field.get(2, 2).? == '9');
+
+    try field.dump();
 }
 
 fn parse_int(char: u8) i64 {
@@ -40,4 +42,6 @@ test "Field test" {
     try testing.expect(field.get(0, 0).? == 1);
     try testing.expect(field.get(1, 1).? == 5);
     try testing.expect(field.get(2, 2).? == 9);
+
+    try field.dump();
 }
