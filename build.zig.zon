@@ -1,0 +1,12 @@
+.{
+    .name = "zig-helpers",
+    .version = "0.8.0",
+    .dependencies = .{},
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "LICENSE",
+        "README.md",
+    },
+}
